@@ -11,7 +11,7 @@ function App() {
   const handleFetchTopics = async () => {
     try {
       console.log("sending api call");
-      const response = await axios.post("http://localhost:5000/api/prompt-post", {
+      const response = await axios.post("http://localhost:3000/api/prompt-post", {
         prompt: `Provide a learning plan for ${languageName} for ${days} days.`
       });
       console.log(response.data);
